@@ -1,0 +1,90 @@
+.grid,
+.grid2,
+.grid3 {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.grid {
+  /* width: 120rem; */
+  align-items: center;
+  padding: 8.6rem 3.2rem 4.4rem 3.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8.6rem;
+}
+
+.block {
+  display: none;
+}
+
+/* .grid2,
+.grid4 {
+  width: 130rem;
+} */
+
+.grid3 {
+  /* width: 100%; */
+  grid-template-columns: 1fr 1fr;
+  color: #222;
+}
+
+.grid4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4.4rem;
+  color: #fff;
+}
+
+.flex2 {
+  position: absolute;
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  margin-right: -100rem;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  gap: -10rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.4rem;
+}
+.padding2 {
+  padding: 0;
+}
+.padding1 {
+  padding: 4.4rem;
+}
+.add {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  width: max-content;
+  margin: 8rem auto 0 auto;
+}
+
+.flex3,
+.flex4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.flex3 {
+  justify-content: space-between;
+}
+.flex4 {
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 4.4rem 0rem 4.4rem;
+}

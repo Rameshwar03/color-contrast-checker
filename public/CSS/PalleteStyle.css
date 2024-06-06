@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1;
+  color: #181919;
+  /* width: 100%; */
+  height: auto;
+}
+
+.pallete {
+  width: 100%;
+  padding: 4.4rem;
+  background-color: #e9f5fb;
+}
+.pallete-Container,
+.pallete-Container- {
+  padding: 4.4rem;
+  background-color: #ddd;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pallete-Container {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.pallete-Container- {
+  height: auto;
+}
+.pallete-Container::-webkit-scrollbar {
+  display: none;
+}
+
+.copied- {
+  position: fixed;
+  bottom: 1rem;
+  padding: 1.8rem 2.4rem;
+  background-color: #1f1f1f;
+  border-radius: 1.2rem;
+  color: #f3f3f3;
+  font-size: 1.6rem;
+  z-index: 200;
+  display: none;
+}
+
+.pallete-subContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 3rem;
+  gap: 4.4rem;
+}
+
+.inheritbackColor {
+  filter: contrast(90%);
+}
+.inheritColor {
+  filter: contrast(150%);
+}
+
+.pallete-heading,
+.heading-bottom {
+  position: absolute;
+  left: 50%;
+}
+
+.pallete-heading {
+  top: 8%;
+  display: flex;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #222;
+  transform: translate(-50%);
+}
+
+.heading-bottom {
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 16rem;
+  height: 8px;
+}
+
+.container-main {
+  display: inline-grid;
+  width: 90%;
+  grid-template-columns: repeat(8, 1fr);
+  row-gap: 4.4rem;
+  column-gap: 0rem;
+  margin: 2rem auto;
+  padding: 9.4rem 2.4rem 2.4rem 2.4rem;
+  border-radius: 1rem;
+  box-shadow: rgba(24, 22, 22, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  justify-items: center;
+  align-items: center;
+}
+
+.square {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  position: relative;
+}
+.square:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+  width: 8.1rem;
+  height: 8.1rem;
+}
+.child-- {
+  position: absolute;
+  font-size: 10px;
+  display: none;
+  font-weight: 550;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

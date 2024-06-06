@@ -1,0 +1,59 @@
+extends base  
+
+block content 
+  section#checker.checker
+  a.left-link(onclick='history.back(-1)')
+    i.fas.fa-arrow-left.icon-left(style='color: #1d1e1f')
+    | &nbsp;Back
+  .padding1
+    h3.tertiary-heading Contrast checker
+    .checker-section.grid2
+      .main-checker
+        .checker-right
+          .background-color-box.flex
+            p.para-text1 Background:
+            // <div class="color-1">#000000</div>
+            button#btn1.show-modal(onclick='button1()')
+              i.fas.fa-neuter
+            .modal.hidden
+              .color-picker.sub
+                button.close-modal &times;
+                canvas#color-block(height='150' width='150')
+                canvas#color-strip(height='150' width='30')
+                input#myRange(type='range' min='1' max='100' value='50')
+                span#slider-input 50
+          .font-color-box.flex
+            p.para-text2 Fonts:
+            // <span class="color-2">#000000</span>
+            button#btn2.show-modal(onclick='button2()')
+              i.fas.fa-neuter
+            .modal.hidden
+              .color-picker.sub
+                button.close-modal &times;
+                canvas#color-block(height='150' width='150')
+                canvas#color-strip(height='150' width='30')
+                input(type='range' min='1' max='100' value='50')
+          .contrast-box.flex
+            .flex3
+              p Normal text
+              p
+                | AA : 
+                span Pass &#x1F600;
+              p
+                | AAA : 
+                span Fail &#x1F610;
+            .flex3
+              p Larger text
+              p
+                | AA : 
+                span Fail &#x1F610;
+              p
+                | AAA : 
+                span Pass &#x1F600;
+      .checker-left.flex4
+        h3.left-heading Engineer&apos;s Quote
+        p.left-para
+          | A good scientist is a person with original ideas. A good engineer
+          | is a person who makes a design that works with as few original
+          | ideas as possible. There are no prima donnas in engineering.
+        p.left-author.mul -Freemon Byson

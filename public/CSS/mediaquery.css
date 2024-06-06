@@ -1,0 +1,319 @@
+/** do mot use rem since it cause error in certain browser  instead use em [ rem==em] consider**/
+
+/* FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/************************************************/
+/*** 85 * 16 = 1360px (for smaller desktop)  ****/
+/************************************************/
+/****************Media Query For Home Page *****************/
+/* 1360 px */
+
+@media (max-width: 85em) {
+  html {
+    font-size: 55%;
+  }
+  .modal {
+    width: auto;
+    height: auto;
+    left: 20rem;
+  }
+  .color-picker {
+    /* width: 18rem; */
+    align-self: center;
+    margin: 0 auto;
+  }
+  .close-modal {
+    top: -1rem;
+    left: 26rem;
+    border-radius: 1.8rem;
+    background: none;
+  }
+  .pallete {
+    padding: 3.6rem;
+  }
+  .pallete-Container,
+  .pallete-Container- {
+    padding: 2.4rem;
+  }
+}
+
+/* 1200 px */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 52%;
+  }
+  .color-- {
+    display: none;
+  }
+  .secondary-heading {
+    font-size: 4.4rem;
+  }
+  .padding1 {
+    padding: 2.4rem;
+  }
+  .container-main {
+    width: 88%;
+  }
+}
+
+/* 1040 px */
+
+@media (max-width: 65em) {
+  html {
+    font-size: 50%;
+  }
+  .secondary-heading {
+    font-size: 4rem;
+  }
+}
+
+/* 960 px */
+
+@media (max-width: 60em) {
+  html {
+    font-size: 48%;
+  }
+  .header {
+    padding: auto 2rem;
+  }
+  .secondary-heading {
+    font-size: 3.4rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 6.4rem 0rem;
+  }
+  .hero-right {
+    margin: 0rem 8rem;
+  }
+  .flex {
+    margin: 0 auto;
+  }
+  .hero-left {
+    margin: 4.4rem 6.4rem;
+  }
+  .nav-main {
+    background-color: rgba(250, 246, 246, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    /* Hide element visually */
+    opacity: 0;
+    /* unaccessible to mouse */
+    pointer-events: none;
+    /*  hide from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav-main {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .primary-heading {
+    z-index: 5;
+  }
+  .icon-mobile-nav {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name='close-container'] {
+    display: block;
+    z-index: 2;
+    color: #222;
+  }
+
+  .nav-list:link,
+  .nav-list:visited {
+    font-size: 3.6rem;
+    color: #222;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    padding: 6.4rem;
+  }
+  .checker-right,
+  .checker-left {
+    display: block;
+    margin: 4.4rem;
+    width: 100%;
+    height: auto;
+  }
+  .flex {
+    margin: 0rem 3.2rem 4.4rem 3.2rem;
+  }
+  .contrast-box {
+    margin-bottom: 0rem;
+  }
+  .container-main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 640 px */
+@media (max-width: 40em) {
+  html {
+    font-size: 52%;
+  }
+  .colors-container {
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .hero-right {
+    margin: 0rem 4.4rem;
+  }
+  .hero-left {
+    margin: 4.4rem 2.8rem;
+  }
+  .color {
+    flex: 13.33%;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rights {
+    width: 90%;
+  }
+}
+
+/* 640 px */
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+  .grid {
+    padding: auto 0rem;
+  }
+  .hero-right {
+    margin: 0rem 2.8rem;
+  }
+  .flex {
+    align-items: flex-start;
+    margin: auto 0;
+  }
+  .hero-left {
+    padding: 1rem;
+    margin: 4.4rem 0rem;
+  }
+  .container {
+    font-size: 52%;
+    flex-wrap: wrap;
+    gap: 6.4rem;
+  }
+  .footer-content,
+  .about-us,
+  .newsletter,
+  .follow {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 416 px */
+@media (max-width: 24em) and (min-width: 16em) {
+  .checker {
+    padding: 6.4rem 0rem;
+  }
+  .checker-right,
+  .checker-left {
+    margin: 4.4rem 0rem;
+    display: flex;
+    width: 68%;
+    padding: 2rem;
+  }
+  .left-heading {
+    font-size: 2.8rem;
+  }
+  .flex4 {
+    font-size: 2rem;
+  }
+  .modal {
+    left: 1rem;
+    padding: 1rem;
+  }
+  .close-modal {
+    display: flex;
+    color: #222;
+    top: -6rem;
+    left: 26rem;
+    padding: 2.4rem;
+  }
+  .show-modal {
+    padding: 0.6rem 1rem;
+  }
+
+  .left-para,
+  .para-text1,
+  .para-text2,
+  .flex3 {
+    font-size: 1.8rem;
+  }
+  .left-link,
+  .tertiary-heading {
+    font-size: 2.8rem;
+    /* width: auto; */
+  }
+  .pallete-Container {
+    padding: 0rem;
+    background-color: #209f9f;
+    height: auto;
+    border-radius: 0rem;
+  }
+  .pallete-Container-,
+  .pallete {
+    padding: 0rem;
+  }
+  .container-main {
+    row-gap: 2rem;
+    column-gap: 0.8rem;
+  }
+  .header {
+    padding: 0rem 2rem;
+  }
+  .flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-right {
+    margin: 0rem 0rem;
+    align-items: center;
+  }
+  .copied {
+    position: fixed;
+    bottom: 2rem;
+  }
+  .container {
+    gap: 1.4rem;
+  }
+  .grid {
+    gap: 6.4rem;
+  }
+  .grid2 {
+    padding: 0rem;
+  }
+  .footer {
+    font-size: 58%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  input,
+  .follow-para,
+  .footer-content a,
+  p.newsletter-para {
+    font-size: 1.8rem;
+  }
+}

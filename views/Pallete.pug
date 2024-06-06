@@ -1,0 +1,43 @@
+extends base
+
+block content
+  .pallete
+    .pallete-Container
+      .copied- copied to clipboard!!
+      each colorPallete in colors
+        .pallete-subContainer.inheritbackColor
+          h1.pallete-heading=`${colorPallete.name}`
+          span.heading-bottom(style=`background-color: ${colorPallete.colors[13]}`)
+          .container-main
+            .square(style=`background-color: ${colorPallete.colors[0]};color:${ colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[0]
+            .square(style=`background-color: ${colorPallete.colors[1]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[1]
+            .square(style=`background-color: ${colorPallete.colors[2]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[2]
+            .square(style=`background-color: ${colorPallete.colors[3]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[3]
+            .square(style=`background-color: ${colorPallete.colors[4]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[4]
+            .square(style=`background-color: ${colorPallete.colors[5]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[5]
+            .square(style=`background-color: ${colorPallete.colors[6]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[6]
+            .square(style=`background-color: ${colorPallete.colors[7]};color:${colorPallete.colors[15]}`)
+              span.child--=colorPallete.colors[7]
+            .square(style=`background-color: ${colorPallete.colors[8]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[8]
+            .square(style=`background-color: ${colorPallete.colors[9]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[9]
+            .square(style=`background-color: ${colorPallete.colors[10]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[10]
+            .square(style=`background-color: ${colorPallete.colors[11]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[11]
+            .square(style=`background-color: ${colorPallete.colors[12]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[12]
+            .square(style=`background-color: ${colorPallete.colors[13]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[13]
+            .square(style=`background-color: ${colorPallete.colors[14]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[14]
+            .square(style=`background-color: ${colorPallete.colors[15]};color:${colorPallete.colors[0]}`)
+              span.child--=colorPallete.colors[15]
